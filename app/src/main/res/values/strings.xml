@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="app_name">CampusBuddy</string>
+    <string name="app_name">Campus Buddy</string>
 
     <string name="hello_world">Hi!</string>
     <string name="action_settings">Settings</string>
@@ -16,6 +16,7 @@
         <string name="action_day_view">Day view</string>
         <string name="action_three_day_view">3 day view</string>
         <string name="action_week_view">Week view</string>
+    <string name="facebook_app_id">772744622840259</string>
 
 
     <string-array name="navigation_events">
@@ -23,9 +24,40 @@
         <item>one day view</item>
         <item>Three day view</item>
         <item>Week view</item>
-        <item>Add new event</item>
 
     </string-array>
+
+    <array name="do_multiple">
+        <item>Do this for all repetitive events</item>
+    </array>
+
+    <string-array name="fbpages">
+        <item>Anushruti</item>
+        <item>ASHRAE</item>
+        <item>Audio Section</item>
+        <item>Cinema Club</item>
+        <item>Cinematic Section</item>
+        <item>Cognizance</item>
+        <item>EDC</item>
+        <item>Electronics Section</item>
+        <item>Fine Arts Section</item>
+        <item>General Notice Board</item>
+        <item>Group For Interactive Learning, IITR</item>
+        <item>IIT Roorkee</item>
+        <item>IMG</item>
+        <item>MDG, IITR</item>
+        <item>NCC</item>
+        <item>Photography Section</item>
+        <item>Rhapsody</item>
+        <item>Sanskriti Club</item>
+        <item>SDSLabs</item>
+        <item>SHARE IITR</item>
+        <item>Team Robocon</item>
+        <item>Thomso IITR</item>
+        <item>PAG IITR</item>
+
+    </string-array>
+
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
@@ -33,7 +65,23 @@
 
     <string name="title_activity_deleteand_edit_events">DeleteandEditEvents</string>
     <string name="title_activity_navigation__drawer__fragment">Navigation_Drawer_Fragment</string>
+    <string name="title_activity_telephone_contacts">TelephoneContacts</string>
+    <string name="title_activity_contact_details">ContactDetails</string>
+    <string name="title_activity_fblist">Fblist</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_fblogin">Fblogin</string>
 
+    <string-array name="colors_array">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Pink</item>
+        <item>Violet</item>
+
+    </string-array>
+    <string name="title_activity_about_us">AboutUs</string>
 
 
 

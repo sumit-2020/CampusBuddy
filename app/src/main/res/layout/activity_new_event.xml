@@ -9,121 +9,193 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Details Of Event"-->
+            <!--android:textSize="24sp"/>-->
+
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/tool_bar"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+             />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Set title for event"/>
+     <android.support.design.widget.TextInputLayout
 
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/edit_title" />
-        </LinearLayout>
+         android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/edit_title"
+                    android:hint="Title"
+                    android:textColor="#000000"
+                    android:singleLine="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
 
 
+        <android.support.design.widget.TextInputLayout
 
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Set date"/>
+            android:layout_marginTop="10dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="                    "
                 android:focusable="false"
                 android:id="@+id/edit_date"
+                android:hint="Date"
+                android:textColor="#000000"
+                android:singleLine="true"
                 />
-        </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
 
-        <LinearLayout
+        <android.support.design.widget.TextInputLayout
+
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Set start time: "/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="           "
+                android:text=""
                 android:focusable="false"
                 android:id="@+id/edit_start_time"
+                android:hint="Starting Time"
+                android:textColor="#000000"
+                android:singleLine="true"
                 />
-        </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
 
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Set end time: "/>
+            android:layout_marginTop="10dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="          "
+                android:text=""
                 android:focusable="false"
                 android:id="@+id/edit_end_time"
+                android:hint="Ending Time"
+                android:textColor="#000000"
+                android:singleLine="true"
                 />
-        </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
 
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Details for event: "/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:id="@+id/edit_details" />
+                android:id="@+id/edit_details"
+                android:hint="Details"
+                android:textColor="#000000"
+                android:singleLine="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
 
-        </LinearLayout>
-
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Venue for event: "/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:id="@+id/edit_venue" />
+                android:id="@+id/edit_venue"
+                android:hint="Venue"
+                android:textColor="#000000"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="Type Of Event: "
+    android:id="@+id/text"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_below="@id/text"
+        android:id="@+id/typeofevent">
+            <RadioButton android:id="@+id/radio_once"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="once"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
 
-        </LinearLayout>
-
-        <Button
+                />
+            <RadioButton android:id="@+id/radio_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton android:id="@+id/radio_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+                android:onClick="onRadioButtonClicked"
+               />
+        <RadioButton android:id="@+id/radio_monthly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/submit"/>
+            android:text="Monthly"
+            android:onClick="onRadioButtonClicked"
+            />
 
-    </LinearLayout>
+        </RadioGroup>
+</RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/color_layout"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:text="Default Color"
+                android:id="@+id/color_name_text"
+                android:textSize="20dp"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:id="@+id/color_button"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:id="@+id/submit"/>
+</LinearLayout>
 </ScrollView>
